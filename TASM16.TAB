@@ -7,48 +7,198 @@
 /* 
 
 .MSFIRST
+.WORDADDRS
 
 /*INSTR ARGS OPCODE BYTES MOD CLASS SHIFT OR */
 /*-------------------------------------------*/
 
 /* Register OPS- */
+
+/* 1n */
 SET R0,*      1000 4 SWAP 1
 SET R1,*      1100 4 SWAP 1
 SET R2,*      1200 4 SWAP 1
 SET R3,*      1300 4 SWAP 1
 SET R4,*      1400 4 SWAP 1
 
+SET R14,*     1E00 4 SWAP 1
+
+/* 2n */
 LD AC,R1      21 2 NOP 1
 LD AC,R2      22 2 NOP 1
 LD AC,R3      23 2 NOP 1
 LD AC,R4      24 2 NOP 1
 
+/* 3n */
 ST R1, AC     31 2 NOP 1
 ST R2, AC     32 2 NOP 1
 ST R3, AC     33 2 NOP 1
 ST R4, AC     34 2 NOP 1
 
+ST R6, AC     36 2 NOP 1
+
+/* 4n */
 LD AC,@R1     41 2 NOP 1
 LD AC,@R2     42 2 NOP 1
 LD AC,@R3     43 2 NOP 1
 LD AC,@R4     44 2 NOP 1
 
+/* 5n */
+/*  todo */
+ST @R1,AC
+ST @R2,AC
+ST @R3,AC
+ST @R4,AC
+
+
+/* 6n */
+/* todo pop*/
+POP R1        61 2 NOP 1
+POP R2        62 2 NOP 1
+POP R3        63 2 NOP 1
+POP R4        64 2 NOP 1
+POP R5        65 2 NOP 1
+POP R6        66 2 NOP 1
+POP R7        67 2 NOP 1
+POP R8        68 2 NOP 1
+POP R9        69 2 NOP 1
+POP R10       6A 2 NOP 1
+POP R11       6B 2 NOP 1
+POP R12       6C 2 NOP 1
+POP R13       6D 2 NOP 1
+POP R14       6E 2 NOP 1
+POP R15       6F 2 NOP 1
+
+/* 7n */
+/* todo push*/
+PUSH R1       71 2 NOP 1
+PUSH R2       72 2 NOP 1
+PUSH R3       73 2 NOP 1
+PUSH R4       74 2 NOP 1
+PUSH R5       75 2 NOP 1
+PUSH R6       76 2 NOP 1
+PUSH R7       77 2 NOP 1
+PUSH R8       78 2 NOP 1
+PUSH R9       79 2 NOP 1
+PUSH R10      7A 2 NOP 1
+PUSH R11      7B 2 NOP 1
+PUSH R12      7C 2 NOP 1
+PUSH R13      7D 2 NOP 1
+PUSH R14      7E 2 NOP 1
+PUSH R15      7F 2 NOP 1
+
+/* 8n */
+/* todo and*/
+AND R1       81 2 NOP 1
+AND R2       81 2 NOP 1
+AND R3       81 2 NOP 1
+AND R4       81 2 NOP 1
+
+/* 9n */
+/* todo or*/
+OR R1        91 2 NOP 1
+OR R2        91 2 NOP 1
+OR R3        91 2 NOP 1
+OR R4        91 2 NOP 1
+
+/* An */
+/*  todo */
+ADD R1        A1 2 NOP 1
+ADD R2        A2 2 NOP 1
+ADD R3        A3 2 NOP 1
+ADD R4        A4 2 NOP 1
+
+/* Bn */
+/*  todo */
+SUB R1        B1 2 NOP 1
+SUB R2        B2 2 NOP 1
+SUB R3        B3 2 NOP 1
+SUB R4        B4 2 NOP 1
+
+/* Cn */
+/*  todo */
+INV R0        C0 2 NOP 1
+INV R1        C1 2 NOP 1
+INV R2        C2 2 NOP 1
+INV R3        C3 2 NOP 1
+
+/* Dn */
+/* todo */
+DCR R0        D0 2 NOP 1
+DCR R1        D1 2 NOP 1
+DCR R2        D2 2 NOP 1
+DCR R3        D3 2 NOP 1
+
+DCR R14       DE 2 NOP 1
+
+
+/* En */
 INC R0        E0 2 NOP 1
 INC R1        E1 2 NOP 1
 INC R2        E2 2 NOP 1
 INC R3        E3 2 NOP 1
 INC R4        E4 2 NOP 1
 
+/* Fn */
+/*  todo */
+XOR R0        F0 2 NOP 1
+XOR R1        F1 2 NOP 1
+XOR R2        F2 2 NOP 1
+XOR R3        F3 2 NOP 1
+
+
+
+
 
 /* Non-register OPS- */
+
+/* 00 */
 BRA *         00 2 NOP 1
 
-CALL *        0800 2 NOP 1
+/* 01 */
+BGT *         01 2 NOP 1
+
+/* 02 */
+BLT *         02 2 NOP 1
+
+/* 03 */
+BGE *         03 2 NOP 1
+
+/* 04 */
+BLE *         04 2 NOP 1
+
+/* 05 */
+BNE *         05 2 NOP 1
+
+/* 06 */
+BEQ *         06 2 NOP 1
+
+/* 07 */
+JMP *         0700 4 SWAP 1
+
+/* 08 */
+CALL *        0800 4 SWAP 1
+
+/* 09 */
 RET ""        09 2 NOP 1
 
+/* 0A */
+LUT ""        0A 2 NOP 1
+
+/* 0B */
 IN ""         0B 2 NOP 1
+
+/* 0C */
 OUT ""        0C 2 NOP 1
 
+/* 0D */
+/* UNASSIGNED */
+
+
+/* 0E */
+/* UNASSIGNED */
+
+/* 0F */
 NOP  ""       0F 2 NOP 1
 
 
