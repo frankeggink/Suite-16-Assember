@@ -17,7 +17,7 @@ getnum:
 	OUT
 	IN
 	SET R1, $200
-	LD AC, @R1
+	LD R0, @R1
 	
 	OUT
 	INC R1
