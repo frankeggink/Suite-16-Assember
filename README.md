@@ -15,6 +15,8 @@ To create a object file type: tasm -t16 suite16.asm
 -t16 specifies that you want to use the TASM16.TAB file that is used for the Suite-16 cpu
 suite16.asm is the source file you want to assemble
 
+# Example hello.asm
+run command: tasm -s -h -c -g0 -t16 hello.asm out.hex
 
-
+see at bottom of listfile hello.lst for generated table of bytes
 
