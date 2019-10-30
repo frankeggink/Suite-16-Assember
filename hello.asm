@@ -6,7 +6,7 @@ EOS:         .EQU    $0000            	;End of string
 start:	
 	SET R1, HELP_MSG_1
 next:	
-	LD AC, @R1
+	LD R0, @R1
 	OUT
 	INC R1
 	BGT next
