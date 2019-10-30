@@ -18,14 +18,14 @@ To create a object file type: **tasm -t16 filename.asm**
 # Example assembling hello.asm
 run command: **tasm -s -h -c -g0 -t16 hello.asm out.hex**
 
-see at bottom of listfile hello.lst for generated table of bytes
-0000  11 00 00 07 41 00 0C 00 E1 00 01 02 00 00 48 65
-0010  6C 6C 6F 20 57 6F 72 6C 64 21 0A 00 00 00 00 00
+see at bottom of listfile hello.lst for generated table of bytes <br/>
+0000  11 00 00 07 41 00 0C 00 E1 00 01 02 00 00 48 65 <br/>
+0010  6C 6C 6F 20 57 6F 72 6C 64 21 0A 00 00 00 00 00 <br/>
 
-**generated opcodes are:**
- 11 00
- 00 07 
- 41 00 
- 0C 00 
- E1 00 
+**generated opcodes are:** <br/>
+ 11 00 <br/>
+ 00 07 <br/>
+ 41 00 <br/>
+ 0C 00 <br/>
+ E1 00 <br/>
  etc..
