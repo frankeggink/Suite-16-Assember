@@ -22,4 +22,6 @@ getnum:
 	OUT
 	INC R1
 	
+.end
+	
 	
