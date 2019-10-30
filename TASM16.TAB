@@ -20,39 +20,87 @@ SET R1,*      1100 4 SWAP 1
 SET R2,*      1200 4 SWAP 1
 SET R3,*      1300 4 SWAP 1
 SET R4,*      1400 4 SWAP 1
-
+SET R5,*      1500 4 SWAP 1
+SET R6,*      1600 4 SWAP 1
+SET R7,*      1700 4 SWAP 1
+SET R8,*      1800 4 SWAP 1
+SET R9,*      1900 4 SWAP 1
+SET R10,*     1A00 4 SWAP 1
+SET R11,*     1B00 4 SWAP 1
+SET R12,*     1C00 4 SWAP 1
+SET R13,*     1D00 4 SWAP 1
 SET R14,*     1E00 4 SWAP 1
+SET R15,*     1F00 4 SWAP 1
 
 /* 2n */
-LD AC,R1      21 2 NOP 1
-LD AC,R2      22 2 NOP 1
-LD AC,R3      23 2 NOP 1
-LD AC,R4      24 2 NOP 1
+LD R0, R1     21 2 NOP 1
+LD R0, R2     22 2 NOP 1
+LD R0, R3     23 2 NOP 1
+LD R0, R4     24 2 NOP 1
+LD R0, R5     25 2 NOP 1
+LD R0, R6     26 2 NOP 1
+LD R0, R7     27 2 NOP 1
+LD R0, R8     28 2 NOP 1
+LD R0, R9     29 2 NOP 1
+LD R0, R10    2A 2 NOP 1
+LD R0, R11    2B 2 NOP 1
+LD R0, R12    2C 2 NOP 1
+LD R0, R13    2D 2 NOP 1
+LD R0, R14    2E 2 NOP 1
+LD R0, R15    2F 2 NOP 1
 
 /* 3n */
-ST R1, AC     31 2 NOP 1
-ST R2, AC     32 2 NOP 1
-ST R3, AC     33 2 NOP 1
-ST R4, AC     34 2 NOP 1
-
-ST R6, AC     36 2 NOP 1
+ST R1,  R0    31 2 NOP 1
+ST R2,  R0    32 2 NOP 1
+ST R3,  R0    33 2 NOP 1
+ST R4,  R0    34 2 NOP 1
+ST R5,  R0    35 2 NOP 1
+ST R6,  R0    36 2 NOP 1
+ST R7,  R0    37 2 NOP 1
+ST R8,  R0    38 2 NOP 1
+ST R9,  R0    39 2 NOP 1
+ST R10, R0    3A 2 NOP 1
+ST R11, R0    3B 2 NOP 1
+ST R12, R0    3C 2 NOP 1
+ST R13, R0    3D 2 NOP 1
+ST R14, R0    3E 2 NOP 1
+ST R15, R0    3F 2 NOP 1
 
 /* 4n */
-LD AC,@R1     41 2 NOP 1
-LD AC,@R2     42 2 NOP 1
-LD AC,@R3     43 2 NOP 1
-LD AC,@R4     44 2 NOP 1
+LD R0, @R1    41 2 NOP 1
+LD R0, @R2    42 2 NOP 1
+LD R0, @R3    43 2 NOP 1
+LD R0, @R4    44 2 NOP 1
+LD R0, @R5    45 2 NOP 1
+LD R0, @R6    46 2 NOP 1
+LD R0, @R7    47 2 NOP 1
+LD R0, @R8    48 2 NOP 1
+LD R0, @R9    49 2 NOP 1
+LD R0, @R10   4A 2 NOP 1
+LD R0, @R11   4B 2 NOP 1
+LD R0, @R12   4C 2 NOP 1
+LD R0, @R13   4D 2 NOP 1
+LD R0, @R14   4E 2 NOP 1
+LD R0, @R15   4F 2 NOP 1
 
 /* 5n */
-/*  todo */
-ST @R1,AC
-ST @R2,AC
-ST @R3,AC
-ST @R4,AC
-
+ST @R1,  R0   51 2 NOP 1
+ST @R2,  R0   52 2 NOP 1
+ST @R3,  R0   53 2 NOP 1
+ST @R4,  R0   54 2 NOP 1
+ST @R5,  R0   55 2 NOP 1
+ST @R6,  R0   56 2 NOP 1
+ST @R7,  R0   57 2 NOP 1
+ST @R8,  R0   58 2 NOP 1
+ST @R9,  R0   59 2 NOP 1
+ST @R10, R0   5A 2 NOP 1
+ST @R11, R0   5B 2 NOP 1
+ST @R12, R0   5C 2 NOP 1
+ST @R13, R0   5D 2 NOP 1
+ST @R14, R0   5E 2 NOP 1
+ST @R15, R0   5F 2 NOP 1
 
 /* 6n */
-/* todo pop*/
 POP R1        61 2 NOP 1
 POP R2        62 2 NOP 1
 POP R3        63 2 NOP 1
@@ -70,7 +118,6 @@ POP R14       6E 2 NOP 1
 POP R15       6F 2 NOP 1
 
 /* 7n */
-/* todo push*/
 PUSH R1       71 2 NOP 1
 PUSH R2       72 2 NOP 1
 PUSH R3       73 2 NOP 1
@@ -88,49 +135,108 @@ PUSH R14      7E 2 NOP 1
 PUSH R15      7F 2 NOP 1
 
 /* 8n */
-/* todo and*/
 AND R1       81 2 NOP 1
-AND R2       81 2 NOP 1
-AND R3       81 2 NOP 1
-AND R4       81 2 NOP 1
+AND R2       82 2 NOP 1
+AND R3       83 2 NOP 1
+AND R4       84 2 NOP 1
+AND R5       85 2 NOP 1
+AND R6       86 2 NOP 1
+AND R7       87 2 NOP 1
+AND R8       88 2 NOP 1
+AND R9       89 2 NOP 1
+AND R10      8A 2 NOP 1
+AND R11      8B 2 NOP 1
+AND R12      8C 2 NOP 1
+AND R13      8D 2 NOP 1
+AND R14      8E 2 NOP 1
+AND R15      8F 2 NOP 1
 
 /* 9n */
-/* todo or*/
 OR R1        91 2 NOP 1
-OR R2        91 2 NOP 1
-OR R3        91 2 NOP 1
-OR R4        91 2 NOP 1
+OR R2        92 2 NOP 1
+OR R3        93 2 NOP 1
+OR R4        94 2 NOP 1
+OR R5        95 2 NOP 1
+OR R6        96 2 NOP 1
+OR R7        97 2 NOP 1
+OR R8        98 2 NOP 1
+OR R9        99 2 NOP 1
+OR R10       9A 2 NOP 1
+OR R11       9B 2 NOP 1
+OR R12       9C 2 NOP 1
+OR R13       9D 2 NOP 1
+OR R14       9E 2 NOP 1
+OR R15       9F 2 NOP 1
 
 /* An */
-/*  todo */
 ADD R1        A1 2 NOP 1
 ADD R2        A2 2 NOP 1
 ADD R3        A3 2 NOP 1
 ADD R4        A4 2 NOP 1
+ADD R5        A5 2 NOP 1
+ADD R6        A6 2 NOP 1
+ADD R7        A7 2 NOP 1
+ADD R8        A8 2 NOP 1
+ADD R9        A9 2 NOP 1
+ADD R10       AA 2 NOP 1
+ADD R11       AB 2 NOP 1
+ADD R12       AC 2 NOP 1
+ADD R13       AD 2 NOP 1
+ADD R14       AE 2 NOP 1
+ADD R15       AF 2 NOP 1
 
 /* Bn */
-/*  todo */
 SUB R1        B1 2 NOP 1
 SUB R2        B2 2 NOP 1
 SUB R3        B3 2 NOP 1
 SUB R4        B4 2 NOP 1
+SUB R5        B5 2 NOP 1
+SUB R6        B6 2 NOP 1
+SUB R7        B7 2 NOP 1
+SUB R8        B8 2 NOP 1
+SUB R9        B9 2 NOP 1
+SUB R10       BA 2 NOP 1
+SUB R11       BB 2 NOP 1
+SUB R12       BC 2 NOP 1
+SUB R13       BD 2 NOP 1
+SUB R14       BE 2 NOP 1
+SUB R15       BF 2 NOP 1
 
 /* Cn */
-/*  todo */
 INV R0        C0 2 NOP 1
 INV R1        C1 2 NOP 1
 INV R2        C2 2 NOP 1
 INV R3        C3 2 NOP 1
+INV R4        C4 2 NOP 1
+INV R5        C5 2 NOP 1
+INV R6        C6 2 NOP 1
+INV R7        C7 2 NOP 1
+INV R8        C8 2 NOP 1
+INV R9        C9 2 NOP 1
+INV R10       CA 2 NOP 1
+INV R11       CB 2 NOP 1
+INV R12       CC 2 NOP 1
+INV R13       CD 2 NOP 1
+INV R14       CE 2 NOP 1
+INV R15       CF 2 NOP 1
 
 /* Dn */
-/* todo */
-DCR R0        D0 2 NOP 1
-DCR R1        D1 2 NOP 1
-DCR R2        D2 2 NOP 1
-DCR R3        D3 2 NOP 1
-
+DEC R0        D0 2 NOP 1
+DEC R1        D1 2 NOP 1
+DEC R2        D2 2 NOP 1
+DEC R3        D3 2 NOP 1
+DEC R4        D4 2 NOP 1
+DEC R5        D5 2 NOP 1
+DEC R6        D6 2 NOP 1
+DEC R7        D7 2 NOP 1
+DEC R8        D8 2 NOP 1
+DEC R9        D9 2 NOP 1
+DEC R10       DA 2 NOP 1
+DEC R11       DB 2 NOP 1
+DEC R12       DC 2 NOP 1
+DEC R13       DD 2 NOP 1
 DCR R14       DE 2 NOP 1
-
+DEC R15       DF 2 NOP 1
 
 /* En */
 INC R0        E0 2 NOP 1
@@ -138,17 +244,34 @@ INC R1        E1 2 NOP 1
 INC R2        E2 2 NOP 1
 INC R3        E3 2 NOP 1
 INC R4        E4 2 NOP 1
+INC R5        E5 2 NOP 1
+INC R6        E6 2 NOP 1
+INC R7        E7 2 NOP 1
+INC R8        E8 2 NOP 1
+INC R9        E9 2 NOP 1
+INC R10       EA 2 NOP 1
+INC R11       EB 2 NOP 1
+INC R12       EC 2 NOP 1
+INC R13       ED 2 NOP 1
+INC R14       EE 2 NOP 1
+INC R15       EF 2 NOP 1
 
 /* Fn */
-/*  todo */
-XOR R0        F0 2 NOP 1
 XOR R1        F1 2 NOP 1
 XOR R2        F2 2 NOP 1
 XOR R3        F3 2 NOP 1
-
-
-
-
+XOR R4        F4 2 NOP 1
+XOR R5        F5 2 NOP 1
+XOR R6        F6 2 NOP 1
+XOR R7        F7 2 NOP 1
+XOR R8        F8 2 NOP 1
+XOR R9        F9 2 NOP 1
+XOR R10       FA 2 NOP 1
+XOR R11       FB 2 NOP 1
+XOR R12       FC 2 NOP 1
+XOR R13       FD 2 NOP 1
+XOR R14       FE 2 NOP 1
+XOR R15       FF 2 NOP 1
 
 /* Non-register OPS- */
 
