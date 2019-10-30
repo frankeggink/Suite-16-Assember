@@ -1,4 +1,5 @@
 #### WORK IN PROGRESS ####
+This was implemented really quickly and a few opcodes need to be added to the **TASM16.TAB** and a lot is still untested!!
 
 # Suite-16-Assembler
 Assembler for the Suite-16 CPU
