@@ -1,0 +1,54 @@
+"TASM SUITE16 Assembler.    "
+/****************************************************************************
+/* $Id: tasm16.tab 
+/****************************************************************************
+/* This is the instruction set definition table for the SUITE16 version of TASM.
+/*      Frank Eggink, October 2019.
+/* 
+
+.MSFIRST
+
+/*INSTR ARGS OPCODE BYTES MOD CLASS SHIFT OR */
+/*-------------------------------------------*/
+
+/* Register OPS- */
+SET R0,*      1000 4 SWAP 1
+SET R1,*      1100 4 SWAP 1
+SET R2,*      1200 4 SWAP 1
+SET R3,*      1300 4 SWAP 1
+SET R4,*      1400 4 SWAP 1
+
+LD AC,R1      21 2 NOP 1
+LD AC,R2      22 2 NOP 1
+LD AC,R3      23 2 NOP 1
+LD AC,R4      24 2 NOP 1
+
+ST R1, AC     31 2 NOP 1
+ST R2, AC     32 2 NOP 1
+ST R3, AC     33 2 NOP 1
+ST R4, AC     34 2 NOP 1
+
+LD AC,@R1     41 2 NOP 1
+LD AC,@R2     42 2 NOP 1
+LD AC,@R3     43 2 NOP 1
+LD AC,@R4     44 2 NOP 1
+
+INC R0        E0 2 NOP 1
+INC R1        E1 2 NOP 1
+INC R2        E2 2 NOP 1
+INC R3        E3 2 NOP 1
+INC R4        E4 2 NOP 1
+
+
+/* Non-register OPS- */
+BRA *         00 2 NOP 1
+
+CALL *        0800 2 NOP 1
+RET ""        09 2 NOP 1
+
+IN ""         0B 2 NOP 1
+OUT ""        0C 2 NOP 1
+
+NOP  ""       0F 2 NOP 1
+
+
