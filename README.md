@@ -4,8 +4,9 @@ This was implemented really quickly and a few opcodes need to be added to the **
 # Suite-16-Assembler
 Assembler for the Suite-16 CPU <br/>
 Suite-16 is being developed by **Ken Boak**. <br/>
-See his repository at: **https://github.com/monsonite/Suite-16**
-
+See his repository at: **https://github.com/monsonite/Suite-16** <br/>
+And for more info see: **https://hackaday.io/project/168025-suite-16** <br/>
+<br/>
 # TASM
 You can download the TASM assembler package from: https://www.ticalc.org/pub/dos/asm/tasm32.zip
 
