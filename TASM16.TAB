@@ -306,22 +306,19 @@ CALL *        0800 4 SWAP 1
 RET ""        09 2 NOP 1
 
 /* 0A */
-LUT ""        0A 2 NOP 1
+ADI *         0A 2 NOP 1
 
 /* 0B */
-IN ""         0B 2 NOP 1
+SBI *         0B 2 NOP 1
 
 /* 0C */
 OUT ""        0C 2 NOP 1
 
 /* 0D */
-/* UNASSIGNED */
-
+IN ""         0D 2 NOP 1
 
 /* 0E */
-/* UNASSIGNED */
+JP@ ""        0E 2 NOP 1
 
 /* 0F */
 NOP  ""       0F 2 NOP 1
-
-
