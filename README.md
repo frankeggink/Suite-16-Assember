@@ -20,7 +20,7 @@ To create a object file type: **tasm -t16 filename.asm**<br/>
 # Example assembling hello.asm<br/>
 run command: **tasm -s -h -c -g0 -t16 hello.asm out.hex**<br/>
 
-see at bottom of listfile hello.lst for generated table of bytes <br/>
+see at bottom of listfile **hello.lst** for generated table of bytes <br/>
 0000  11 00 00 07 41 00 0C 00 E1 00 01 02 00 00 48 65 <br/>
 0010  6C 6C 6F 20 57 6F 72 6C 64 21 0A 00 00 00 00 00 <br/>
 
