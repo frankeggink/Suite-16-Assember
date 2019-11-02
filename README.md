@@ -4,7 +4,7 @@ This was implemented really quickly and a few opcodes need to be added to the **
 # NOTE
 For best viewing of file binToMem.c append **?ts=3** to the url <br/>
 https://github.com/frankeggink/Suite-16-Assember/blob/master/binToMem.c?ts=3 <br/>
-
+This sets the used tabsize to 3 <br/>
 
 # Suite-16-Assembler
 Assembler for the Suite-16 CPU <br/>
