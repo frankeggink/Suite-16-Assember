@@ -31,3 +31,9 @@ see at bottom of listfile hello.lst for generated table of bytes <br/>
  0C 00 <br/>
  E1 00 <br/>
  etc..
+
+
+**generate MEM array:**  <br/>
+run command: **binToMemArray.exe < hello.lst > output** <br/>
+the generated array with opcoded is placed in **output**
+
