@@ -33,7 +33,6 @@ static void CreateArray(void) {
 	int counter = 0;
 	unsigned int msb,lsb;
 
-
 	// start of array
 	printf("#define MEMSIZE  512\n");
 	printf("unsigned int M[MEMSIZE] = {\n");
