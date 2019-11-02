@@ -12,7 +12,8 @@ next:
 	BGT next
 	BRA start
 	
-HELP_MSG_1: .BYTE "Hello World!\n",EOS
-	
+.MSFIRST
+
+HELP_MSG_1: .WORD "Hello World!\n",EOS
 	
 .end	
