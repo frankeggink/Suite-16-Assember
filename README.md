@@ -1,6 +1,11 @@
 #### WORK IN PROGRESS ####
 This was implemented really quickly and a few opcodes need to be added to the **TASM16.TAB** and a lot is still untested!!
 
+# NOTE
+For best viewing of file binToMem.c append **?ts=3** to the url <br/>
+https://github.com/frankeggink/Suite-16-Assember/blob/master/binToMem.c?ts=3 <br/>
+
+
 # Suite-16-Assembler
 Assembler for the Suite-16 CPU <br/>
 Suite-16 is being developed by **Ken Boak**. <br/>
