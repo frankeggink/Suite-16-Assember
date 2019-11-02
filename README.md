@@ -34,6 +34,6 @@ see at bottom of listfile hello.lst for generated table of bytes <br/>
 
 
 **generate MEM array:**  <br/>
-run command: **binToMemArray.exe < hello.lst > output** <br/>
+run command: **binToMem.exe < hello.lst > output** <br/>
 the generated array with opcoded is placed in **output**
 
