@@ -1,7 +1,7 @@
 ; ### NOTE ###
 ; to make this program compile correctly and work
 ; change .ino sketch: 		case 0x7:  addr = M[PC] ;  PC = addr ; break ;  // 16-bit JMP	(remove PC++)
-; change TASM16.TAB: 		CALL *        08 2 NOP 1										(call uses lsb of opcode)
+; change TASM16.TAB: 		CALL *        08 2 NOP 1		(call uses lsb of opcode)									(call uses lsb of opcode)
 
 EOS:         .EQU    $0000            	;End of string
 
