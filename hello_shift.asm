@@ -1,7 +1,10 @@
 ; ### NOTE ###
 ; to make this program compile correctly and work
 ; change .ino sketch: 		case 0x7:  addr = M[PC] ;  PC = addr ; break ;  // 16-bit JMP	(remove PC++)
-; change TASM16.TAB: 		CALL *        08 2 NOP 1		(call uses lsb of opcode)									(call uses lsb of opcode)
+; change TASM16.TAB: 		CALL *        08 2 NOP 1		(call uses lsb of opcode)
+; assemble with command: tasm -s -h -c -g0 -t16 hello_shift.asm out.hex
+; generate MEM-array with command: binToMem.exe < hello_shift.lst > output
+; paste code from 'output' in .ino sketch
 
 EOS:         .EQU    $0000            	;End of string
 
