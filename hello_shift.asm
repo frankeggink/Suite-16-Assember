@@ -5,6 +5,7 @@
 ; assemble with command: tasm -s -h -c -g0 -t16 hello_shift.asm out.hex
 ; generate MEM-array with command: binToMem.exe < hello_shift.lst > output
 ; paste code from 'output' in .ino sketch
+; code is not really shifting, it's just transferring the msb from one register to the lsb of another register 
 
 EOS:         .EQU    $0000            	;End of string
 
